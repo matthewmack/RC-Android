@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements. See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership. The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License. You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied. See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <title>RideClever</title>
+
+  </head>
+  <body onload="onLoad();">
+  <div class="app">
+  <div class="spinner">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  <div class="bar4"></div>
+  <div class="bar5"></div>
+  <div class="bar6"></div>
+  <div class="bar7"></div>
+  <div class="bar8"></div>
+  <div class="bar9"></div>
+  <div class="bar10"></div>
+  <div class="bar11"></div>
+  <div class="bar12"></div>
+  </div>
+   
+  <h1>RideClever</h1>
+  <div style="color:#FFF; font-size:1.8em; font-style:italic; text-transform:none;">The Smart Way To Ride </div>
+  <div id="deviceready" class="blink">
+  <p class="event listening">Connecting to Device</p>
+  <p class="event received"><a href="http://rideclever.com"></a></p>
+   
+  </div>
+  </div>
+  <script type="text/javascript" src="cordova-2.3.0.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+   
+  <script type="text/javascript" charset="utf-8">
+  app.initialize();
+   
+  // Call onDeviceReady when PhoneGap is loaded.
+  //
+  // At this point, the document has loaded but phonegap-1.0.0.js has not.
+  // When PhoneGap is loaded and talking with the native device,
+  // it will call the event `deviceready`.
+  // 
+  function onLoad() {
+  document.addEventListener("deviceready", onDeviceReady, false);
+  }
+  // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
+  //
+  function onDeviceReady() {
+  // Now safe to use the PhoneGap API
+  window.location.href='https://www.rideclever.com';
+  }
+   
+  </script>
+  </body>
+
+</html>
