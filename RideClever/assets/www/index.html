@@ -23,6 +23,7 @@
   <meta name="format-detection" content="telephone=no" />
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
   <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <script type="text/javascript" charset="utf-8" src="GCMPlugin.js"></script>
   <title>RideClever</title>
 
   </head>
@@ -47,7 +48,7 @@
   <div style="color:#FFF; font-size:1.8em; font-style:italic; text-transform:none;">The Smart Way To Ride </div>
   <div id="deviceready" class="blink">
   <p class="event listening">Connecting to Device</p>
-  <p class="event received"><a href="http://rideclever.com"></a></p>
+  <p class="event received"><a href="http://test-rc.gotpantheon.com"></a></p>
    
   </div>
   </div>
@@ -70,7 +71,13 @@
   //
   function onDeviceReady() {
   // Now safe to use the PhoneGap API
-  window.location.href='https://www.rideclever.com';
+  //window.location.href='http://test-rc.gotpantheon.com';
+  ref=window.open ('https://test-rc.gotpantheon.com', '_self', 'location=no');
+  ref.addEventListener('loadstop', function(){
+ var appDebug = document.getElementById('app-debug');
+ appDebug.innerHTML = 'sent from the app';
+ alert('Sent from the app');
+});
   }
    
   </script>
